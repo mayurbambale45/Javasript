@@ -1,4 +1,4 @@
-// Arrays =>
+// ***************************** Arrays  Part-1=>
 
     // Declaration of Array => 
     const myArr = [1, 2, 3, 4, 5, 6]
@@ -39,3 +39,6 @@ const newArray = myArr.join()
     const myA2 = myArr.splice(1, 3)      // => Return section of [ ] & selected elements are remove from original array. 
     console.log(myA1)
     console.log("C ", myArr);
+
+
+// ***************************** Arrays  Part-2=>
