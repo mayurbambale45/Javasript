@@ -2,11 +2,6 @@
 // => Two ways to declare object 1.way of literal 2. way of constructor
 // => Singleton - Not made in literals only in constructor always
 
-// 2. => Object Constructor :
-
-    // Declare object methods ->
-    // Object.create
-
 // 1. => Object Literals    :
     // Declare object methods ->
 
