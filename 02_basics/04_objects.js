@@ -68,7 +68,7 @@
             email: "ddd@gmail.com",
         },
     ]
-
+/*
     users[1].email
 
     console.log(thinderUser)        
@@ -76,3 +76,40 @@
     console.log(Object.values(thinderUser))     // => Output values datatype is array
     console.log(Object.entries(thinderUser))    // => Output is array inside array
     console.log(thinderUser.hasOwnProperty('isLoggedIn'))   // => (property) is present or not
+*/
+
+
+// => Destructuring of Objects 
+
+    const course = {
+        coursename : "Javascript-Hindi",
+        price: "999",
+        courseInstructor:"ChaiAurCode",
+    }
+    // course.courseInstructor                        // => Not used many times
+    const {courseInstructor:CI, price:Pr} = course    //=> For printing the values method, Renaming->(oldName: newName)
+    // console.log(CI, Pr)
+
+/*    => Object destructure in REACT
+    const navbar = ({company}) => {
+    }
+    navbar(company="AbcLimited")
+*/
+
+// => API 
+// => Json format 
+/*
+// Method - 1 =>
+    {
+        "name":"Mayur",
+        "coursename": "ChaiAurCode",
+        "price":"299"
+    }
+
+// Method - 2 =>
+    [
+    {},
+    {},
+    {},
+    ]
+*/
