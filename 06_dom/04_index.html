@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - elements</title>
+    <style>
+        .body{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head> 
+<body class="body">
+    <ul class="language">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+</body>
+
+    <script>
+    // Not optimized approach => In innerHTML More traversing for large number of elements
+        // function addLanguage(langName){
+        //     const li = document.createElement('li')
+        //     li.innerHTML = `${langName}`
+        //     document.querySelector('.language').appendChild(li)
+        // }
+        // addLanguage("python")
+        // addLanguage("typescript")
+
+    // Optimized approach => use append child not innerHTML for bigger project
+        function optiLang(langName){
+            const li = document.createElement('li')
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector('.language').appendChild(li)
+        }
+        optiLang("goLang")
+
+    // Edit example-1 =>
+        const secLang = document.querySelector('li:nth-child(2)')
+
+        // secLang.innerHTML = "Chai"   => Not use
+
+        const newLi = document.createElement('li')
+        newLi.textContent = "Second Code"
+        secLang.replaceWith(newLi )
+
+    // Edit example-2 =>
+        const firstLang = document.querySelector('li:first-child ')
+        firstLang.outerHTML = '<li>First C++</li>'
+
+    // Remove =>
+        const lastLang = document.querySelector('li:last-child')
+        lastLang.remove()
+    </script>
+
+</html>

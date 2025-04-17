@@ -6,7 +6,7 @@
     <title>Dom learning</title>
     <style>
         .bg-black{
-            background-color: black;
+            background-color: 212121;
             color:#fff
         }
     </style>
@@ -15,6 +15,14 @@
     <div>
         <h1 id="title">DOM Learning with chai aur code<span>High City</span></h1>
         <p>Lorem ipsum dolor sit amet!</p>
+        <p>Lorem ipsum dolor sit amet!2</p>
+        <p>Lorem ipsum dolor sit amet!3</p>
+        <ul>
+            <li class="list-name">one</li>
+            <li class="list-name">two</li>
+            <li class="list-name">three</li>
+            <li class="list-name">four</li>
+        </ul>
     </div>
 </body>
 </html>
@@ -38,5 +46,10 @@ queryselectorAll('li')
 
 NodeList & tempLiList - not a array (but similar to array)
 
+const temp = document.getElementsByClassName('list-name')
+temp
+Array.from(temp)
+const ca = Array.from(temp)
+ca.forEach( function (params) { console.log(params) })
 
 -->

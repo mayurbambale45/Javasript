@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .body{
+            background-color: 212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="body">
+    <!-- DOM manipulation allows developers to interact with and modify the structure, style, and content of web pages -->
+</body>
+    <script>
+        const div =  document.createElement('div')
+        console.log(div)
+        div.className = "main"
+        div.id = Math.round(Math.random() *10)
+        div.setAttribute ("title", "Chai aur code") // Most preferable option
+        div.style.backgroundcolor = "green"
+        div.style.padding = "12px"
+        // div.innerText ="Chai aur code"
+        const addTEXT = document.createTextNode("Chai aur code")
+
+        div.appendChild(addTEXT)
+
+        document.body.appendChild(div)
+    </script>
+</html>
