@@ -57,6 +57,18 @@ form.addEventListener('submit', function(e){
     const bmi = (weight / ((height * height) / 10000)).toFixed(2)
     results.innerHTML = `<span>${bmi}</span>`
   }
-  
 });
+```
+
+## Project 3
+``` Javascript
+const clock = document.getElementById('clock')
+// const clock = document.querySelector('#clock')
+
+
+setInterval(function(){
+  let date = new Date()
+// console.log(date.toLocaleTimeString())
+  clock.innerHTML= date.toLocaleTimeString()
+}, 1000)
 ```
