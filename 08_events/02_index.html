@@ -3,9 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doc</title>
+  <title>Set Timeout</title>
 </head>
 <body>
-  <h1>heading title 1</h1>
+  <h1>Chai aur code</h1>
+  <button id="stop">Stop</button>
 </body>
+<script>
+//Method 1 =>
+  // setTimeout(function() {
+  //   console.log("Afer 1 second")
+  // }, 1000);
+
+// Method 2=>
+  // const sayhello = function() {
+  //   console.log("Hello world!")
+  // }
+  // setTimeout(sayhello, 1000) // give ref of function
+
+// Method 3=> 
+  // setTimeout(() => {
+  //     console.log("After 2 second"); 
+  // }, 2000);
+
+// Method 4=> 
+  const hello = function(){
+    document.querySelector('h1').innerHTML='Best Javascript series.'
+  }
+  const changeme = setTimeout(hello, 2000);
+
+  document.querySelector('#stop').addEventListener('click', function(){
+    clearTimeout(changeme)
+    console.log("function stop")
+  })
+
+  
+</script>
 </html>
